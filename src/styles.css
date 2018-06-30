@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --page-color: #2c2f33;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html { 
+  background: url(assets/bgSky.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

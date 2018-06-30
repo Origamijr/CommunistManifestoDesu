@@ -1,0 +1,37 @@
+.fullscreen
+{
+     display: flex;
+     align-content: initial;
+     justify-content: center;
+     height: 100vh;
+}
+
+.page
+{
+     width: 1000px;
+     height: 10000px;
+     color: #eeeeee;
+}
+
+.page-header
+{
+     background-color:	#7289da;
+     border-radius: 3px;
+     width: 600px;
+     height: 100px;
+     color: #eeeeee;
+     padding: 20px;
+     text-align: center;
+     font-size: 24pt;
+     font-weight: bolder;
+}
+
+.page-content
+{
+     background-color: #2c2f33;
+     border-radius: 3px;
+     width: 600px;
+     height: auto;
+     color: #eeeeee;
+     padding: 20px;
+}
