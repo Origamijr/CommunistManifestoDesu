@@ -8,17 +8,18 @@
 
 .page
 {
-     width: 1000px;
-     height: 10000px;
-     color: #eeeeee;
+    position: relative;
+    max-width: 600px;
+    height: auto;
+    color: #eeeeee;
 }
 
 .page-header
 {
      background-color:	#7289da;
-     border-radius: 3px;
-     width: 600px;
-     height: 100px;
+     border-radius: 3px 3px 0px 0px;
+     width: 100%;
+     height: auto;
      color: #eeeeee;
      padding: 20px;
      text-align: center;
@@ -28,10 +29,15 @@
 
 .page-content
 {
-     background-color: #2c2f33;
-     border-radius: 3px;
-     width: 600px;
+    position: relative;
+    background-color: #2c2f33;
+     border-radius: 0px 0px 3px 3px;
+     width: 100%;
      height: auto;
      color: #eeeeee;
      padding: 20px;
+}
+
+.page-content img {
+    width: 100%;
 }
