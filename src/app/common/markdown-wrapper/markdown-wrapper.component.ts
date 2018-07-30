@@ -16,7 +16,6 @@ export class MarkdownWrapperComponent implements OnInit {
   ) {};
 
   ngOnInit(): void {
-    console.log(this.filename)
     this.http.get(this.filename, { responseType: 'text' }).subscribe((data) => {
       this.text = data;
     });

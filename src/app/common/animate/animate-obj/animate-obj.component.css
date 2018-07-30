@@ -1,0 +1,29 @@
+.swirly-ball {
+    --rotation: 180deg;
+
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: tomato;
+
+    color: #223344;
+    position: absolute;
+    left: -18px;
+    top: -18px;
+
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: solid 3px currentColor;
+    border-bottom: solid 3px transparent;
+}
+.swirly-ball:hover {
+    color: #227744;
+    background-color: salmon;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: solid 3px currentColor;
+    border-bottom: solid 3px transparent;
+}
