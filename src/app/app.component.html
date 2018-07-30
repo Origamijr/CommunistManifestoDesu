@@ -1,4 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<app-animate-field></app-animate-field>
 <div class="fullscreen">
   <div class="page">
     <div class="page-header">
@@ -12,7 +13,7 @@
       <img src="assets/C6Mp-QfWcAAiMZc.jpg">
 
       <div>
-        <markdown *ngIf="text != ''">{{ text }}</markdown>
+        <app-markdown-wrapper [filename]="'assets/markdown/communist-manifesto.md'"></app-markdown-wrapper>
       </div>
     </div>
   </div>
