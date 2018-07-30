@@ -24,7 +24,7 @@ export interface StyleMatrix {
 @Component({
   selector: 'app-animate-obj',
   templateUrl: './animate-obj.component.html',
-  styleUrls: ['./animate-obj.component.css']
+  styleUrls: ['./animate-obj.component.scss']
 })
 export class AnimateObjComponent implements OnInit {
 

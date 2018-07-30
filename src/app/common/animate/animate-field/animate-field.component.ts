@@ -4,7 +4,7 @@ import { AnimateService, AnimateMouse } from '../animate.service';
 @Component({
   selector: 'app-animate-field',
   templateUrl: './animate-field.component.html',
-  styleUrls: ['./animate-field.component.css']
+  styleUrls: ['./animate-field.component.scss']
 })
 export class AnimateFieldComponent implements OnInit {
 
