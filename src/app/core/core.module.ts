@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { CoreRoutingModule } from './core-routing.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { LoginComponent } from './login/login.component';
-import { RouterModule } from '../../../node_modules/@angular/router';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [

@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { AnimateService, AnimateMouse } from '../animate.service';
+import { AnimateService } from '../animate.service';
+import { EventHandlerService } from '../../event-handler/event-handler.service';
 
 @Component({
   selector: 'app-animate-field',
@@ -10,28 +11,34 @@ export class AnimateFieldComponent implements OnInit {
 
   fps = 30;
 
-  constructor(private animateService: AnimateService) {}
+  constructor(
+    private animateService: AnimateService,
+    private eventHandlerService: EventHandlerService
+  ) {}
 
   ngOnInit(): void {
 
     // set service variables to communicate to components
-    this.animateService.setMouse(0, 0, 0);
-
     let window = document.getElementsByClassName("animate-field")[0];
     this.animateService.setWindow(window.clientHeight, window.clientWidth);
 
     this.frame = this.frame.bind(this);
     setInterval(this.frame, 1000 / this.fps);
+
+    this.eventHandlerService.resetKeys(true);
   }
 
   frame(): void {
     this.animateService.updateElements();
-  }
+    
+    let keys = this.eventHandlerService.getKeys();
+    let pressed = [];
+    for (let i = 0; i < keys.length; i++) {
+      if (keys[i]) pressed.push(i);
+    }
+    console.log(pressed);
 
-  // React to a change in the mouse
-  onMouseUpdate(event: MouseEvent) {
-    // If performance is really an issue, I can look into octoganal distances
-    this.animateService.setMouse(event.clientX, event.clientY, event.buttons);
+    this.eventHandlerService.updateKeys();
   }
 
   // React to window size change

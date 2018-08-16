@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AnimateService, AnimateMouse } from '../animate.service';
+import { AnimateService } from '../animate.service';
+import { EventHandlerService, Mouse } from '../../event-handler/event-handler.service';
 
 export interface AnimateBody {
   r: number,  // radius of collision
@@ -54,7 +55,10 @@ export class AnimateObjComponent implements OnInit {
     m: this.matToStyleStr(this.m)
   };
 
-  constructor(private animateService: AnimateService) { }
+  constructor(
+    private animateService: AnimateService,
+    private eventHandlerService: EventHandlerService
+  ) { }
 
   ngOnInit() {
     this.animateService.addElement(this);
@@ -79,9 +83,9 @@ export class AnimateObjComponent implements OnInit {
 
     this.styleFrame['m'] = this.matToStyleStr(this.m);
 
-    let mouse: AnimateMouse = this.animateService.getMouse();
+    let mouse: Mouse = this.eventHandlerService.getMouse();
 
-    if (this.animateService.checkMouseButton(0) && this.distance(mouse.x, mouse.y, this.m.x, this.m.y) < 36) {
+    if (this.eventHandlerService.checkMouseButton(0) && this.distance(mouse.x, mouse.y, this.m.x, this.m.y) < 36) {
       // Reset velocities
       this.obj.vx = 0;
       this.obj.vy = 0;
