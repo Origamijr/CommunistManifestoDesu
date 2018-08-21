@@ -7,6 +7,9 @@ body {
     margin: 0;
     padding: 0;
 }
+body a {
+    color: grey;
+}
 
 html { 
   background: url(assets/bgSky.jpg) no-repeat center center fixed; 
@@ -58,4 +61,12 @@ html {
 
 .page-content img {
     width: 100%;
+}
+
+.page-nav a{
+    color: white;
+    font-size: 14pt;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 5px 20px
 }
