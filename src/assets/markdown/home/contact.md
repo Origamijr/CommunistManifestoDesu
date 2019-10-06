@@ -1,6 +1,8 @@
-lol. You think I use social media?
+I don't use social media.
 
-Here's what sites I do use:
+Here's what sites I do frequent:
+
+[Github](https://github.com/Origamijr)
 
 [My Anime List](https://myanimelist.net/profile/Nessun)
 
