@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && cp Origamijr.github.io/index.html Origamijr.github.io/404.html",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
