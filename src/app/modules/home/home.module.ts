@@ -6,6 +6,7 @@ import { HomeComponent } from './home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { SharedModule } from '../../shared/shared.module';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { SharedModule } from '../../shared/shared.module';
   declarations: [
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    ProjectsComponent
   ]
 })
 export class HomeModule { }
