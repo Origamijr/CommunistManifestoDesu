@@ -8,11 +8,12 @@ body {
   padding: 0;
 }
 body a {
-  color: grey;
+  color: rgb(154, 171, 218);
 }
 
 html {
-  background: url(assets/images/bgSky.jpg) no-repeat center center fixed;
+  //background: url(assets/images/bgSky.jpg) no-repeat center center fixed;
+  background: rgb(78, 76, 92);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

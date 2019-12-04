@@ -50,6 +50,8 @@ export class AnimateObjComponent implements OnInit {
   }
 
   rot = 0;
+
+  selectCover = null;
   
   styleFrame: object = {
     m: this.matToStyleStr(this.m)
@@ -61,6 +63,7 @@ export class AnimateObjComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.selectCover = document.getElementsByClassName("full-cover")[0];
     this.animateService.addElement(this);
   }
 
@@ -85,17 +88,27 @@ export class AnimateObjComponent implements OnInit {
 
     let mouse: Mouse = this.eventHandlerService.getMouse();
 
-    if (this.eventHandlerService.checkMouseButton(0) && this.distance(mouse.x, mouse.y, this.m.x, this.m.y) < 36) {
-      // Reset velocities
-      this.obj.vx = 0;
-      this.obj.vy = 0;
+    if (this.distance(mouse.x, mouse.y, this.m.x, this.m.y) < 36) {
+      this.selectCover.style.position = 'fixed';
+      if (this.eventHandlerService.checkMouseButton(0)) {
+        // Reset velocities
+        this.obj.vx = 0;
+        this.obj.vy = 0;
 
-      // Set velocities
-      this.obj.ax = -this.obj.vx * this.obj.drag;
-      this.obj.ay = -this.obj.vy * this.obj.drag;
-      this.obj.vx += this.obj.ax + (mouse.x - this.m.x);
-      this.obj.vy += this.obj.ay + (mouse.y - this.m.y);
+        // Set velocities
+        this.obj.ax = -this.obj.vx * this.obj.drag;
+        this.obj.ay = -this.obj.vy * this.obj.drag;
+        this.obj.vx += this.obj.ax + (mouse.x - this.m.x);
+        this.obj.vy += this.obj.ay + (mouse.y - this.m.y);
+      } else {
+        this.obj.ax = -this.obj.vx * this.obj.drag;
+        this.obj.ay = this.obj.g; // lol. no vertical drag
+        this.obj.vx += this.obj.ax;
+        this.obj.vy += this.obj.ay;
+      }
     } else {
+      this.selectCover.style.position = null;
+
       this.obj.ax = -this.obj.vx * this.obj.drag;
       this.obj.ay = this.obj.g; // lol. no vertical drag
       this.obj.vx += this.obj.ax;
