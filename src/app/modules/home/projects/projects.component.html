@@ -1,55 +1,55 @@
-<h3>Filters: </h3>
+<app-collapsible name="Filters">
+    <div class="filter-container">
+        Topic: 
+        <app-filter-toggle-button (toggled)="setFilter($event, 'music')">Music</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'graphics')">Graphics</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'misc')">Misc</app-filter-toggle-button>
+    </div>
 
-<div class="filter-container">
-    Topic: 
-    <app-filter-toggle-button (toggled)="setFilter($event, 'music')">Music</app-filter-toggle-button>
-    <app-filter-toggle-button (toggled)="setFilter($event, 'graphics')">Graphics</app-filter-toggle-button>
-    <app-filter-toggle-button (toggled)="setFilter($event, 'misc')">Misc</app-filter-toggle-button>
-</div>
+    <div class="filter-container">
+        Status: 
+        <app-filter-toggle-button (toggled)="setFilter($event, 'complete')">Complete</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'progress')">In Progress</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'hieatus')">Hiatus</app-filter-toggle-button>
+    </div>
 
-<div class="filter-container">
-    Status: 
-    <app-filter-toggle-button (toggled)="setFilter($event, 'complete')">Complete</app-filter-toggle-button>
-    <app-filter-toggle-button (toggled)="setFilter($event, 'progress')">In Progress</app-filter-toggle-button>
-    <app-filter-toggle-button (toggled)="setFilter($event, 'hieatus')">Hiatus</app-filter-toggle-button>
-</div>
+    <div class="filter-container">
+        Purpose: 
+        <app-filter-toggle-button (toggled)="setFilter($event, 'personal')">Personal</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'class')">Class</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'contest')">Contest</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'research')">Research</app-filter-toggle-button>
+    </div>
 
-<div class="filter-container">
-    Purpose: 
-    <app-filter-toggle-button (toggled)="setFilter($event, 'personal')">Personal</app-filter-toggle-button>
-    <app-filter-toggle-button (toggled)="setFilter($event, 'class')">Class</app-filter-toggle-button>
-    <app-filter-toggle-button (toggled)="setFilter($event, 'contest')">Contest</app-filter-toggle-button>
-    <app-filter-toggle-button (toggled)="setFilter($event, 'research')">Research</app-filter-toggle-button>
-</div>
+    <div class="filter-container">
+        Collaborators: 
+        <app-filter-toggle-button (toggled)="setFilter($event, 'solo')">Solo</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'collab')">Collaboration</app-filter-toggle-button>
+    </div>
 
-<div class="filter-container">
-    Collaborators: 
-    <app-filter-toggle-button (toggled)="setFilter($event, 'solo')">Solo</app-filter-toggle-button>
-    <app-filter-toggle-button (toggled)="setFilter($event, 'collab')">Collaboration</app-filter-toggle-button>
-</div>
+    <div class="filter-container">
+        Languages: 
+        <app-filter-toggle-button (toggled)="setFilter($event, 'python')">Python</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'c++')">C++</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'c#')">C#</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'f#')">F#</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'java')">Java</app-filter-toggle-button>
+    </div>
 
-<div class="filter-container">
-    Languages: 
-    <app-filter-toggle-button (toggled)="setFilter($event, 'python')">Python</app-filter-toggle-button>
-    <app-filter-toggle-button (toggled)="setFilter($event, 'c++')">C++</app-filter-toggle-button>
-    <app-filter-toggle-button (toggled)="setFilter($event, 'c#')">C#</app-filter-toggle-button>
-    <app-filter-toggle-button (toggled)="setFilter($event, 'f#')">F#</app-filter-toggle-button>
-    <app-filter-toggle-button (toggled)="setFilter($event, 'java')">Java</app-filter-toggle-button>
-</div>
+    <div class="filter-container">
+        Technologies: 
+        <app-filter-toggle-button (toggled)="setFilter($event, 'unity')">Unity</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'blender')">Blender</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'opengl')">OpenGL</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'pd')">Pure Data</app-filter-toggle-button>
+    </div>
 
-<div class="filter-container">
-    Technologies: 
-    <app-filter-toggle-button (toggled)="setFilter($event, 'unity')">Unity</app-filter-toggle-button>
-    <app-filter-toggle-button (toggled)="setFilter($event, 'blender')">Blender</app-filter-toggle-button>
-    <app-filter-toggle-button (toggled)="setFilter($event, 'opengl')">OpenGL</app-filter-toggle-button>
-    <app-filter-toggle-button (toggled)="setFilter($event, 'pd')">Pure Data</app-filter-toggle-button>
-</div>
-
-<div class="filter-container">
-    Tags: 
-    <app-filter-toggle-button (toggled)="setFilter($event, 'game')">Game</app-filter-toggle-button>
-    <app-filter-toggle-button (toggled)="setFilter($event, 'vr')">VR</app-filter-toggle-button>
-</div>
+    <div class="filter-container">
+        Other Tags: 
+        <app-filter-toggle-button (toggled)="setFilter($event, 'game')">Game</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'vr')">VR</app-filter-toggle-button>
+    </div>
+</app-collapsible>
 
 <app-markdown-wrapper [filename]="'assets/markdown/home/projects/music-fun.md'" class="bottom-separator"
     *ngIf="!filtered(['music', 'progress', 'personal', 'solo', 'python', 'opengl'])">

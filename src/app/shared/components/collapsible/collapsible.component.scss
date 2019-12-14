@@ -1,0 +1,20 @@
+.collapser {
+    font-size: 14pt;
+    padding: 12px;
+    background-color: rgb(33, 35, 37);
+    cursor: pointer;
+    user-select: none;
+}
+
+.icon {
+    float: right;
+    margin-right: 5px;
+}
+
+.collapsible {
+    padding: 10px 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+}
+

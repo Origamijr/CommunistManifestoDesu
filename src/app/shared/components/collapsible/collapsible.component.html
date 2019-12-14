@@ -1,0 +1,9 @@
+<div class="collapser" (click)="toggleCollapse()">
+    {{name}}
+    <div class="icon">{{icon}}</div>
+</div>
+<div class="collapsible" [ngStyle]="{'maxHeight': (collapsed ? 0 : collapsibleHeight)}">
+    <div #content>
+        <ng-content></ng-content>
+    </div>
+</div>

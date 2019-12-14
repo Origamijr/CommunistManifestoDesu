@@ -7,6 +7,7 @@ import { AnimateObjComponent } from './components/animate/animate-obj/animate-ob
 import { HttpClientModule } from '@angular/common/http';
 import { EventHandlerComponent } from './components/event-handler/event-handler.component';
 import { FilterToggleButtonComponent } from './components/filter-toggle-button/filter-toggle-button.component';
+import { CollapsibleComponent } from './components/collapsible/collapsible.component';
 
 @NgModule({
   imports: [
@@ -19,14 +20,16 @@ import { FilterToggleButtonComponent } from './components/filter-toggle-button/f
     AnimateFieldComponent,
     AnimateObjComponent,
     EventHandlerComponent,
-    FilterToggleButtonComponent
+    FilterToggleButtonComponent,
+    CollapsibleComponent
   ],
   exports: [
     MarkdownWrapperComponent,
     AnimateFieldComponent,
     AnimateObjComponent,
     EventHandlerComponent,
-    FilterToggleButtonComponent
+    FilterToggleButtonComponent,
+    CollapsibleComponent
   ],
 })
 export class SharedModule { }
