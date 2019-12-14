@@ -1,0 +1,16 @@
+@import "../../../../constants.scss";
+
+div {
+    border: 1px solid $text-color-white;
+    border-radius: 6px;
+    padding: 8px 16px;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    font-size: 12pt;
+}
+
+div.active {
+    background: $text-color-white;
+    color: $background-color-grey;
+}

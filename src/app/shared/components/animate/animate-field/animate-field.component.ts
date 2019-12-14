@@ -36,7 +36,7 @@ export class AnimateFieldComponent implements OnInit {
     for (let i = 0; i < keys.length; i++) {
       if (keys[i]) pressed.push(i);
     }
-    console.log(pressed);
+    //console.log(pressed);
 
     this.eventHandlerService.updateKeys();
   }

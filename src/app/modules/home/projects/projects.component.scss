@@ -1,0 +1,12 @@
+@import "../../../../constants.scss";
+
+.bottom-separator {
+    border-bottom: 4px solid $text-color-white;
+    padding: 0px 10px 30px 10px;
+    display: inline-block;
+    //width: 100%;
+}
+
+.filter-container {
+    margin: 10px 0px
+}
