@@ -10,7 +10,7 @@
         Status: 
         <app-filter-toggle-button (toggled)="setFilter($event, 'complete')">Complete</app-filter-toggle-button>
         <app-filter-toggle-button (toggled)="setFilter($event, 'progress')">In Progress</app-filter-toggle-button>
-        <app-filter-toggle-button (toggled)="setFilter($event, 'hieatus')">Hiatus</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'hiatus')">Hiatus</app-filter-toggle-button>
     </div>
 
     <div class="filter-container">
@@ -50,6 +50,8 @@
         <app-filter-toggle-button (toggled)="setFilter($event, 'vr')">VR</app-filter-toggle-button>
     </div>
 </app-collapsible>
+
+
 
 <app-markdown-wrapper [filename]="'assets/markdown/home/projects/music-fun.md'" class="bottom-separator"
     *ngIf="!filtered(['music', 'progress', 'personal', 'solo', 'python', 'opengl'])">

@@ -59,19 +59,17 @@ export class ProjectsComponent implements OnInit {
     ];
     
     for (const group of groups) {
-      //if (filters.some(s => group.includes(s))) {
-        var filtering: boolean = false
-        var filtered: boolean = true;
-        for (const filter of group) {
-          if (this.filters[filter]) {
-            filtering = true;
-          }
-          if (this.filters[filter] && filters.includes(filter)) {
-            filtered = false;
-          }
+      var filtering: boolean = false
+      var filtered: boolean = true;
+      for (const filter of group) {
+        if (this.filters[filter]) {
+          filtering = true;
         }
-        if (filtering && filtered) return true;
-      //}
+        if (this.filters[filter] && filters.includes(filter)) {
+          filtered = false;
+        }
+      }
+      if (filtering && filtered) return true;
     }
 
     return false;
