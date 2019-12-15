@@ -19,3 +19,5 @@ Everything below here is just my rambling.
 You may have noticed that there's a random orange ball bouncing on the page. That was an experiment on creating interractable graphics with css and javascript. You can grab the ball and throw it, but that's pretty much it. I might eventually expand on this concept.
 
 Originally, the project name for this site was "Communist Manifesto Desu". I have been notified by my mother that it probably wasn't the best naming choice. As such, I renamed the repository to "Capitalist Manifesto Desu" (still political, but at least my mother doesn't mind), but there might still be some artifacts left over.
+
+*Last Updated 12/15/2019*

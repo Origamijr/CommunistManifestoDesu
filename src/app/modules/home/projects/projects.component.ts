@@ -10,6 +10,7 @@ export class ProjectsComponent implements OnInit {
   filters = {
     "music": false,
     "graphics": false,
+    "ai": false,
     "misc": false,
 
     "complete": false,
@@ -49,7 +50,7 @@ export class ProjectsComponent implements OnInit {
 
   filtered(filters: string[]) {
     var groups = [
-      ["music", "graphics", "misc"],
+      ["music", "graphics", "ai", "misc"],
       ["complete", "progress", "hiatus"],
       ["personal", "class", "contest", "research"],
       ["solo", "collab"],

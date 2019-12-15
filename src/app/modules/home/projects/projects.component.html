@@ -3,6 +3,7 @@
         Topic: 
         <app-filter-toggle-button (toggled)="setFilter($event, 'music')">Music</app-filter-toggle-button>
         <app-filter-toggle-button (toggled)="setFilter($event, 'graphics')">Graphics</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'ai')">AI/ML</app-filter-toggle-button>
         <app-filter-toggle-button (toggled)="setFilter($event, 'misc')">Misc</app-filter-toggle-button>
     </div>
 
@@ -41,7 +42,7 @@
         <app-filter-toggle-button (toggled)="setFilter($event, 'unity')">Unity</app-filter-toggle-button>
         <app-filter-toggle-button (toggled)="setFilter($event, 'blender')">Blender</app-filter-toggle-button>
         <app-filter-toggle-button (toggled)="setFilter($event, 'opengl')">OpenGL</app-filter-toggle-button>
-        <app-filter-toggle-button (toggled)="setFilter($event, 'pd')">Pure Data</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'pd')">Pure Data/Max MSP</app-filter-toggle-button>
     </div>
 
     <div class="filter-container">
@@ -56,13 +57,29 @@
 <app-markdown-wrapper [filename]="'assets/markdown/home/projects/music-fun.md'" class="bottom-separator"
     *ngIf="!filtered(['music', 'progress', 'personal', 'solo', 'python', 'opengl'])">
 </app-markdown-wrapper>
+
+<app-markdown-wrapper [filename]="'assets/markdown/home/projects/machine-improv.md'" class="bottom-separator"
+    *ngIf="!filtered(['music', 'ai', 'progress', 'research', 'solo', 'python', 'pd'])">
+</app-markdown-wrapper>
+
+<app-markdown-wrapper [filename]="'assets/markdown/home/projects/discord-bots.md'" class="bottom-separator"
+    *ngIf="!filtered(['ai', 'misc', 'progress', 'personal', 'solo', 'python', 'c#', 'f#', 'game'])">
+</app-markdown-wrapper>
+
+<app-markdown-wrapper [filename]="'assets/markdown/home/projects/143-virtual-env.md'" class="bottom-separator"
+    *ngIf="!filtered(['graphics', 'misc', 'complete', 'class', 'solo', 'c#', 'unity', 'blender', 'game', 'vr'])">
+</app-markdown-wrapper>
+
+<app-markdown-wrapper [filename]="'assets/markdown/home/projects/172-softsynth.md'" class="bottom-separator"
+    *ngIf="!filtered(['music', 'complete', 'class', 'solo', 'pd'])">
+</app-markdown-wrapper>
     
 <app-markdown-wrapper [filename]="'assets/markdown/home/projects/pure-mania.md'" class="bottom-separator"
     *ngIf="!filtered(['music', 'graphics', 'complete', 'class', 'solo', 'pd', 'game'])">
 </app-markdown-wrapper>
 
-<app-markdown-wrapper [filename]="'assets/markdown/home/projects/venice-canals.md'" class="bottom-separator"
-    *ngIf="!filtered(['graphics', 'complete', 'class', 'collab', 'c++', 'opengl'])">
+<app-markdown-wrapper [filename]="'assets/markdown/home/projects/inf-dungeon-dive.md'" class="bottom-separator"
+    *ngIf="!filtered(['misc', 'hiatus', 'contest', 'solo', 'c#', 'unity', 'game'])">
 </app-markdown-wrapper>
 
 <app-markdown-wrapper [filename]="'assets/markdown/home/projects/spatial-viz.md'" class="bottom-separator"
@@ -73,14 +90,6 @@
     *ngIf="!filtered(['misc', 'complete', 'contest', 'collab', 'c#', 'unity', 'game', 'vr'])">
 </app-markdown-wrapper>
 
-<app-markdown-wrapper [filename]="'assets/markdown/home/projects/143-virtual-env.md'" class="bottom-separator"
-    *ngIf="!filtered(['graphics', 'misc', 'complete', 'class', 'solo', 'c#', 'unity', 'blender', 'game', 'vr'])">
-</app-markdown-wrapper>
-
-<app-markdown-wrapper [filename]="'assets/markdown/home/projects/inf-dungeon-dive.md'" class="bottom-separator"
-    *ngIf="!filtered(['misc', 'hiatus', 'contest', 'solo', 'c#', 'unity', 'game'])">
-</app-markdown-wrapper>
-
-<app-markdown-wrapper [filename]="'assets/markdown/home/projects/discord-bots.md'" class="bottom-separator"
-    *ngIf="!filtered(['misc', 'progress', 'personal', 'solo', 'python', 'c#', 'f#', 'game'])">
+<app-markdown-wrapper [filename]="'assets/markdown/home/projects/venice-canals.md'" class="bottom-separator"
+    *ngIf="!filtered(['graphics', 'complete', 'class', 'collab', 'c++', 'opengl'])">
 </app-markdown-wrapper>
