@@ -16,7 +16,9 @@ Everything below here is just my rambling.
 
 ## Website Notes
 
-You may have noticed that there's a random orange ball bouncing on the page. That was an experiment on creating interractable graphics with css and javascript. You can grab the ball and throw it, but that's pretty much it. I might eventually expand on this concept.
+You may have noticed that there's a random orange ball bouncing on the page (barely works on mobile). That was an experiment on creating interractable graphics with css and javascript. You can grab the ball and throw it, but that's pretty much it. I might eventually expand on this concept.
+
+Credit to [Xuan](https://www.instagram.com/hua.ruoxuan/?hl=en) for my beautiful website icon.
 
 Originally, the project name for this site was "Communist Manifesto Desu". I have been notified by my mother that it probably wasn't the best naming choice. As such, I renamed the repository to "Capitalist Manifesto Desu" (still political, but at least my mother doesn't mind), but there might still be some artifacts left over.
 

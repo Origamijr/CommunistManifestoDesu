@@ -1,6 +1,6 @@
 ## Machine Improvisation
 
-Independent studies with [http://dub.ucsd.edu/ Shlomo Dubnov] studying various methods of Machine Improvisation. Algorithms of interest include:
+Independent studies with [Shlomo Dubnov](http://dub.ucsd.edu/) studying various methods of Machine Improvisation. Algorithms of interest include:
 
 * OMax
 * pyOracle
