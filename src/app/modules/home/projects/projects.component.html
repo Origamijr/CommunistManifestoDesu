@@ -35,6 +35,7 @@
         <app-filter-toggle-button (toggled)="setFilter($event, 'c#')">C#</app-filter-toggle-button>
         <app-filter-toggle-button (toggled)="setFilter($event, 'f#')">F#</app-filter-toggle-button>
         <app-filter-toggle-button (toggled)="setFilter($event, 'java')">Java</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'c')">C</app-filter-toggle-button>
     </div>
 
     <div class="filter-container">
@@ -53,6 +54,17 @@
 </app-collapsible>
 
 
+<app-markdown-wrapper [filename]="'assets/markdown/home/projects/125-cyber-city.md'" class="bottom-separator"
+    *ngIf="!filtered(['graphics', 'complete', 'class', 'collab', 'c++', 'game'])">
+</app-markdown-wrapper>
+
+<app-markdown-wrapper [filename]="'assets/markdown/home/projects/spec2spec.md'" class="bottom-separator"
+    *ngIf="!filtered(['music', 'ai', 'progress', 'research', 'collab', 'python'])">
+</app-markdown-wrapper>
+
+<app-markdown-wrapper [filename]="'assets/markdown/home/projects/klatt-synth.md'" class="bottom-separator"
+    *ngIf="!filtered(['music', 'complete', 'class', 'solo', 'pd', 'c'])">
+</app-markdown-wrapper>
 
 <app-markdown-wrapper [filename]="'assets/markdown/home/projects/music-fun.md'" class="bottom-separator"
     *ngIf="!filtered(['music', 'graphics', 'progress', 'personal', 'solo', 'python', 'opengl'])">

@@ -22,4 +22,4 @@ Credit to [Xuan](https://www.instagram.com/hua.ruoxuan/?hl=en) for my beautiful 
 
 Originally, the project name for this site was "Communist Manifesto Desu". I have been notified by my mother that it probably wasn't the best naming choice. As such, I renamed the repository to "Capitalist Manifesto Desu" (still political, but at least my mother doesn't mind), but there might still be some artifacts left over.
 
-*Last Updated 12/15/2019*
+*Last Updated 6/9/2019*

@@ -54,7 +54,7 @@ export class ProjectsComponent implements OnInit {
       ["complete", "progress", "hiatus"],
       ["personal", "class", "contest", "research"],
       ["solo", "collab"],
-      ["python", "c++", "c#", "f#", "java"],
+      ["python", "c++", "c#", "f#", "java", "c"],
       ["unity", "blender", "opengl", "pd"],
       ["game", "vr"]
     ];
