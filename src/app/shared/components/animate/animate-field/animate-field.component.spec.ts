@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { AnimateFieldComponent } from './animate-field.component';
 
@@ -6,7 +6,7 @@ describe('AnimateFieldComponent', () => {
   let component: AnimateFieldComponent;
   let fixture: ComponentFixture<AnimateFieldComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ AnimateFieldComponent ]
     })
