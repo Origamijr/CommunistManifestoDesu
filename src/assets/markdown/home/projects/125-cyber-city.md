@@ -4,7 +4,7 @@
 
 [Website Here](https://cse125.ucsd.edu/2020/cse125g3/)
 
-Livestream VOD will be posted sometime...
+[Livestream Here](https://www.youtube.com/watch?v=4JXcWfkPvPE)
 
 <img src="assets/images/cyber-city.gif" width="100%" height="YYY" class="center"/>
 

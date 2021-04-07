@@ -34,7 +34,6 @@
         <app-filter-toggle-button (toggled)="setFilter($event, 'c++')">C++</app-filter-toggle-button>
         <app-filter-toggle-button (toggled)="setFilter($event, 'c#')">C#</app-filter-toggle-button>
         <app-filter-toggle-button (toggled)="setFilter($event, 'f#')">F#</app-filter-toggle-button>
-        <app-filter-toggle-button (toggled)="setFilter($event, 'java')">Java</app-filter-toggle-button>
         <app-filter-toggle-button (toggled)="setFilter($event, 'c')">C</app-filter-toggle-button>
     </div>
 
@@ -59,7 +58,7 @@
 </app-markdown-wrapper>
 
 <app-markdown-wrapper [filename]="'assets/markdown/home/projects/spec2spec.md'" class="bottom-separator"
-    *ngIf="!filtered(['music', 'ai', 'progress', 'research', 'collab', 'python'])">
+    *ngIf="!filtered(['music', 'ai', 'hiatus', 'research', 'collab', 'python'])">
 </app-markdown-wrapper>
 
 <app-markdown-wrapper [filename]="'assets/markdown/home/projects/klatt-synth.md'" class="bottom-separator"

@@ -1,4 +1,4 @@
-## spec2spec (In Progress)
+## spec2spec
 
 Pix2pix CGAN trained for the task of singing-voice synthesis by translating partially synthesized voice spectrograms into higher quality spectrograms.
 
